@@ -9,19 +9,19 @@ import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class GitHubSearch {
+public class GitHubSearchTest {
 
     @BeforeAll
-    static void beforeAll() {
+    static void setup() {
         Configuration.browserSize = "2160x1440";
-        Configuration.browserPosition = "0x0";
+        Configuration.baseUrl = "https://github.com";
     }
 
     @Test
     void shouldFindSelenideRepositoryAtTheTop() {
 
         // открыть главную страницу
-        open("https://github.com/selenide/selenide");
+        open("/selenide/selenide");
 
         // перейдите в раздел Wiki проекта
         $("#wiki-tab").click();
