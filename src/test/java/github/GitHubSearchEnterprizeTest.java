@@ -18,7 +18,6 @@ public class GitHubSearchEnterprizeTest {
         Configuration.baseUrl = "https://github.com";
     }
 
-    @Tag("positive")
     @Test
     void changesRectangles() {
 
@@ -31,7 +30,7 @@ public class GitHubSearchEnterprizeTest {
 
         // поиск текста
 
-        $("#hero-section-brand-heading").shouldHave(text("The AI-powered developer platform"));
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered developer platform."));
 
 
     }
