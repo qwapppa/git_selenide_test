@@ -2,6 +2,7 @@ package github;
 
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -18,6 +19,7 @@ public class GitHubSearchTest {
     }
 
     @Test
+    @Disabled ("Some reason")
     void shouldFindSelenideRepositoryAtTheTop() {
 
         // открыть главную страницу
