@@ -21,7 +21,7 @@ public class GitHubSearchTest {
 
     @Tag("positive")
     @Test
-    @Disabled ("Some reason")
+    //@Disabled ("Some reason")
     void shouldFindSelenideRepositoryAtTheTop() {
 
         // открыть главную страницу
