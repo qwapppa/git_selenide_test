@@ -3,6 +3,7 @@ package github;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.DragAndDropOptions;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.text;
@@ -16,6 +17,7 @@ public class ChangesRectanglesTest {
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
     }
 
+    @Tag("positive")
     @Test
     void ChangesRectanglesTest() {
 
