@@ -18,7 +18,7 @@ public class GitHubSearchEnterprizeTest {
     }
 
     @Test
-    void changesRectangles () {
+    void changesRectangles() {
 
         // открыть главную страницу
         open("");
@@ -29,7 +29,7 @@ public class GitHubSearchEnterprizeTest {
 
         // поиск текста
 
-        $(".logged-out").shouldHave(text("The AI-powered developer platform."));
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered developer platform"));
 
 
     }
