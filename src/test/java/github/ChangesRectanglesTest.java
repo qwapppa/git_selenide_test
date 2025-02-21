@@ -15,6 +15,7 @@ public class ChangesRectanglesTest {
     static void setup() {
         Configuration.browserSize = "2160x1440";
         Configuration.baseUrl = "https://the-internet.herokuapp.com";
+        Configuration.holdBrowserOpen = false;
     }
 
     @Tag("positive")
