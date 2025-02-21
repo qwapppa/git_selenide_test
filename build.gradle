@@ -39,7 +39,6 @@ dependencies {
 
 tasks.withType(Test) {
     useJUnitPlatform()
-
     testLogging {
         lifecycle {
             events "started", "skipped", "failed", "standard_error", "standard_out"
@@ -50,6 +49,6 @@ tasks.withType(Test) {
 
 task positive_test(type: Test) {
     useJUnitPlatform {
-        includeTags("positive")
+        includeTags("positive","negative","skipped")
     }
 }

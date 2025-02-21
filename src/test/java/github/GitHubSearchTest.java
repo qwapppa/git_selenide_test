@@ -19,6 +19,7 @@ public class GitHubSearchTest {
         Configuration.baseUrl = "https://github.com";
     }
 
+    @Tag("skipped")
     @Test
     //@Disabled ("Some reason")
     void shouldFindSelenideRepositoryAtTheTop() {

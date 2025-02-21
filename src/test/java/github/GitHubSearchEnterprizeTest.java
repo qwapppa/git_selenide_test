@@ -17,7 +17,7 @@ public class GitHubSearchEnterprizeTest {
         Configuration.browserSize = "2160x1440";
         Configuration.baseUrl = "https://github.com";
     }
-
+    @Tag("negative")
     @Test
     void changesRectangles() {
 
